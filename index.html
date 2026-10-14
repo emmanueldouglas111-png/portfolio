@@ -116,6 +116,18 @@
         <li>"Try It Yourself" prompt cards that drive a scripted live-transcript demo</li>
         <li>Mobile-friendly layout and keyboard focus styles</li>
       </ul>
+      <h3>The challenge</h3>
+      <p>A restaurant needs more than a social media page: visitors want to see the food, trust the place and know how to order, usually on a phone. I set out to build a fast, food-first site that also shows a modern idea, an AI voice assistant that takes orders through conversation.</p>
+      <h3>My approach</h3>
+      <p>I chose plain HTML, CSS and JavaScript on purpose. A restaurant page does not need a framework, and fewer dependencies mean faster loads and less to break. The design leads with photography and a clear green-and-gold identity, and the assistant is a scripted demo so the page stays safe and private.</p>
+      <h3>Problems I solved</h3>
+      <ul class="list">
+        <li><b>Broken images:</b> missing or misnamed files showed raw alt text, so I added photo fallbacks that keep the layout intact.</li>
+        <li><b>Layout overflow:</b> the page scrolled sideways on some screens. I traced it to elements wider than the viewport and fixed it with containment and flexible sizing.</li>
+        <li><b>Deployment bugs:</b> file names that worked on Windows failed on Vercel because its servers treat <code>Script.js</code> and <code>script.js</code> as different files. I now keep names and paths consistent and lowercase.</li>
+      </ul>
+      <h3>What I learned</h3>
+      <p>Responsive layout debugging, careful asset handling, and a repeatable Git → GitHub → Vercel release routine where every push redeploys automatically.</p>
       <h3>Built with</h3>
       <ul class="chips"><li>HTML5</li><li>CSS3</li><li>Vanilla JavaScript</li><li>Google Fonts</li><li>Git &amp; GitHub</li><li>Vercel</li></ul>
       <div class="note-box"><b>Security notes.</b> The chat transcript renders text with <code>textContent</code>, the page contains no API keys, and the demo replies are scripted, so no user data leaves the browser.</div>
@@ -131,6 +143,22 @@
     <div class="proj-body">
       <h3 class="ptitle">Marketing Business Project</h3>
       <p>A landing page for a marketing business, built with React, where clients can look up products and buy them. It is live on Vercel with the source on GitHub.</p>
+      <h3>The challenge</h3>
+      <p>A marketing business needs a landing page that explains what it offers and lets clients browse products and move toward buying without friction.</p>
+      <h3>My approach</h3>
+      <p>I built the page in React, splitting the interface into reusable components so products and sections are easy to add or change. Product listings are repeated, interactive UI, which is where React's component model and state handling help most. I also wanted to apply my React skills in a real, shipped project.</p>
+      <h3>What it does today</h3>
+      <ul class="list">
+        <li>Landing page presenting the business and its products</li>
+        <li>Product browsing with a cart interface</li>
+        <li>Deployed on Vercel from GitHub, so every push updates the live site</li>
+      </ul>
+      <h3>Next on my roadmap</h3>
+      <ul class="list">
+        <li>Cart actions: quantities, running total and removing items</li>
+        <li>Checkout: one-tap ordering through WhatsApp, then a payment provider such as Paystack</li>
+        <li>Loading and error states, plus accessibility and performance checks</li>
+      </ul>
       <h3>Built with</h3>
       <ul class="chips"><li>React</li><li>Vercel</li><li>GitHub</li></ul>
       <div class="cta"><a class="btn solid" href="https://marketingbusinessproject.vercel.app/" target="_blank" rel="noopener noreferrer">View live site</a><a class="btn" href="https://github.com/emmanueldouglas111-png/marketingbusinessproject" target="_blank" rel="noopener noreferrer">Source code</a></div>
