@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Udota Emmanuel Douglas | Cybersecurity &amp; Frontend Developer</title>
+<meta name="description" content="Portfolio of Udota Emmanuel Douglas, a cybersecurity enthusiast and frontend web developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--
+  HOW TO EDIT: every piece of text in [square brackets] with a dashed amber underline
+  is a placeholder. Replace it with your real details, then delete class="ph" from that tag.
+-->
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top"><span>~/</span><span>udota-douglas</span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#project">Project</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">// Lagos, Nigeria · open to opportunities</p>
+      <h1>I build clean interfaces and think like an attacker to keep them <em>secure</em>.</h1>
+      <p class="lead">Hi, I'm Udota Emmanuel Douglas, a cybersecurity enthusiast and frontend web developer. I turn designs into fast, responsive websites with HTML, CSS and JavaScript, and I care about how they hold up under real-world threats.</p>
+      <div class="cta"><a class="btn solid" href="#project">View my project</a><a class="btn" href="#contact">Get in touch</a></div>
+    </div>
+    <div class="term" aria-label="Terminal summary">
+      <div class="term-bar"><i></i><i></i><i></i><span>portfolio.sh</span></div>
+      <pre id="term" aria-live="polite"></pre>
+    </div>
+  </div>
+  <div class="wrap stats">
+    <div><b>2</b><span>live projects</span></div>
+    <div><b>React · HTML · CSS · JS</b><span>core stack</span></div>
+    <div><b>Git → GitHub → Vercel</b><span>delivery workflow</span></div>
+  </div>
+</section>
+
+<section id="about"><div class="wrap two">
+  <div class="sec-head"><p class="tag">01 / about</p><h2>Where design meets defence</h2></div>
+  <div class="prose">
+    <p>I'm a frontend developer who builds websites that look polished and work on any screen. I'm also growing in cybersecurity, because I believe the best interfaces are the ones people can trust.</p>
+    <p>I'm early in my cybersecurity journey and learning in public. I'm currently working toward my CompTIA Security+ certification, and I'm putting it into practice in hands-on labs on TryHackMe. I also build real frontend projects alongside my studies so the skills stick.</p>
+    <p>I learn by building. My latest project, a restaurant website with an interactive AI-assistant demo, was rebuilt from a screen recording, then versioned on GitHub and deployed on Vercel.</p>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="sec-head"><p class="tag">02 / skills</p><h2>What I work with</h2></div>
+  <div class="cols">
+    <article class="card">
+      <h3><span class="ico">&lt;/&gt;</span> Frontend development</h3>
+      <p class="sub-label">Mastered</p>
+      <ul class="chips core">
+        <li>React</li><li>HTML5</li><li>JavaScript</li><li>CSS3</li>
+      </ul>
+      <p class="sub-label">Also working with</p>
+      <ul class="chips">
+        <li>Semantic markup</li><li>Grid &amp; Flexbox</li><li>Responsive design</li>
+        <li>Accessibility basics</li><li>Git &amp; GitHub</li><li>Vercel deployment</li><li>VS Code &amp; Live Server</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3><span class="ico">⛨</span> Cybersecurity</h3>
+      <p class="sub-label">Skills</p>
+      <ul class="chips core">
+        <li>Security</li><li>Penetration testing</li><li>Incident response</li>
+        <li>SIEM &amp; log analysis</li><li>Vulnerability assessment</li>
+      </ul>
+      <p class="sub-label">Tools &amp; fundamentals</p>
+      <ul class="chips">
+        <li>Kali Linux</li><li>Metasploitable</li><li>Nmap</li><li>Wireshark</li><li>Burp Suite</li>
+        <li>Elastic</li><li>Splunk</li><li>Shodan</li><li>TCP/IP</li><li>DNS</li><li>HTTP</li>
+      </ul>
+      <p class="sub-label" style="margin-top:20px">Currently learning</p>
+      <ul class="chips">
+        <li class="learn">Cloud security</li><li>CompTIA Security+</li><li>TryHackMe</li>
+      </ul>
+    </article>
+  </div>
+  <article class="card wide">
+    <h3><span class="ico">✓</span> Secure front-end principles I build by</h3>
+    <ul class="list">
+      <li><b>Treat all input as untrusted.</b> Render user-provided text with <code>textContent</code>, not <code>innerHTML</code>, to avoid cross-site scripting (XSS).</li>
+      <li><b>Keep secrets off the client.</b> API keys never go in front-end code; they belong in server-side environment variables.</li>
+      <li><b>Ship over HTTPS.</b> Hosting on platforms like Vercel serves sites over HTTPS by default.</li>
+      <li><b>Least privilege and minimal dependencies.</b> Fewer third-party scripts means a smaller attack surface.</li>
+    </ul>
+  </article>
+</div></section>
+
+<section id="project"><div class="wrap">
+  <div class="sec-head"><p class="tag">03 / completed project</p><h2>Mama Joy Restaurants</h2></div>
+  <article class="proj">
+    <div class="mock" role="img" aria-label="Preview of the Mama Joy website: green header, gold button, menu cards">
+      <div class="m-nav"><i></i><span></span><span></span><span></span><b></b></div>
+      <div class="m-hero"><h4>Great Nigerian Food. <em>One Conversation Away.</em></h4><div class="m-btns"><b></b><u></u></div></div>
+      <div class="m-cards"><i></i><i></i><i></i></div>
+    </div>
+    <div class="proj-body">
+      <p>A responsive restaurant website with an AI voice-assistant concept. I recreated it from a screen recording, matching its green-and-gold look, serif headings, filterable menu and live-conversation panel.</p>
+      <h3>What it includes</h3>
+      <ul class="list">
+        <li>Sticky navigation with active-section highlighting and smooth scrolling</li>
+        <li>Hero section with calls to action and key stats</li>
+        <li>Menu grid with category filters, spice and bestseller tags, and photo fallbacks</li>
+        <li>"Try It Yourself" prompt cards that drive a scripted live-transcript demo</li>
+        <li>Mobile-friendly layout and keyboard focus styles</li>
+      </ul>
+      <h3>Built with</h3>
+      <ul class="chips"><li>HTML5</li><li>CSS3</li><li>Vanilla JavaScript</li><li>Google Fonts</li><li>Git &amp; GitHub</li><li>Vercel</li></ul>
+      <div class="note-box"><b>Security notes.</b> The chat transcript renders text with <code>textContent</code>, the page contains no API keys, and the demo replies are scripted, so no user data leaves the browser.</div>
+      <div class="cta"><a class="btn solid" href="https://mama-joy-restaurants.vercel.app/" target="_blank" rel="noopener noreferrer">View live site</a><a class="btn" href="https://github.com/emmanueldouglas111-png/Mama-joy-restaurants" target="_blank" rel="noopener noreferrer">Source code</a></div>
+    </div>
+  </article>
+
+  <article class="proj second">
+    <div class="mock gen" role="img" aria-label="Browser window showing marketingbusinessproject.vercel.app">
+      <div class="m-bar"><i></i><i></i><i></i><span>marketingbusinessproject.vercel.app</span></div>
+      <div class="m-body"><h4>Marketing Business Project</h4><p></p><p></p><div class="m-btns"><b></b><u></u></div></div>
+    </div>
+    <div class="proj-body">
+      <h3 class="ptitle">Marketing Business Project</h3>
+      <p>A landing page for a marketing business, built with React, where clients can look up products and buy them. It is live on Vercel with the source on GitHub.</p>
+      <h3>Built with</h3>
+      <ul class="chips"><li>React</li><li>Vercel</li><li>GitHub</li></ul>
+      <div class="cta"><a class="btn solid" href="https://marketingbusinessproject.vercel.app/" target="_blank" rel="noopener noreferrer">View live site</a><a class="btn" href="https://github.com/emmanueldouglas111-png/marketingbusinessproject" target="_blank" rel="noopener noreferrer">Source code</a></div>
+    </div>
+  </article>
+</div></section>
+
+<section id="journey"><div class="wrap">
+  <div class="sec-head"><p class="tag">04 / journey</p><h2>My learner's journey</h2></div>
+  <div class="cols">
+    <div class="timeline">
+      <div class="t-item"><span class="when">Now</span><h4>Studying for CompTIA Security+</h4><p>Building cybersecurity fundamentals and practising hands-on in labs on TryHackMe.</p></div>
+      <div class="t-item"><span class="when">Recent</span><h4>Mama Joy Restaurants website</h4><p>Rebuilt a restaurant site from a screen recording, then versioned it on GitHub and deployed it on Vercel.</p></div>
+      <div class="t-item"><span class="when">2026</span><h4>Learned frontend web development</h4><p>Built friendly, responsive websites with React, HTML, JavaScript and CSS, using GitHub for version control and Vercel for deployment.</p></div>
+      <div class="t-item"><span class="when">2025</span><h4>Cybersecurity training at Codar Tech Institute</h4><p>Hands-on training with Kali Linux, Metasploitable, Nmap, Wireshark, Burp Suite, Elastic, Splunk and Shodan, plus network fundamentals (TCP/IP, DNS, HTTP). This is where I found my interest in security.</p></div>
+      <div class="t-item"><span class="when">2024</span><h4>Started learning tech</h4><p>Began teaching myself through online tutorials.</p></div>
+    </div>
+    <div>
+      <h3 class="sub">Certifications &amp; training</h3>
+      <ul class="certs">
+        <li>CompTIA Security+ <span class="badge">in progress</span></li>
+        <li>Cybersecurity training · Codar Tech Institute · 2025</li>
+      </ul>
+      <h3 class="sub">Learning &amp; practice</h3>
+      <ul class="certs">
+        <li><a class="lnk" href="https://www.101labs.net/" target="_blank" rel="noopener noreferrer">101Labs</a>: CompTIA Security+ hands-on labs <span class="badge">completed</span></li>
+        <li>TryHackMe <span class="badge">in progress</span> <span class="ph">[rooms completed / rank]</span></li>
+        <li><a class="lnk" href="docs/phishing-attack-incident-report.pdf" target="_blank" rel="noopener noreferrer">Incident response write-up: phishing attack incident report</a> <span class="badge">PDF</span></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <p class="tag">05 / contact</p>
+  <h2>Let's work together</h2>
+  <p class="lead">Looking for a frontend developer who thinks about security, or want to talk about a project? Reach out.</p>
+  <form class="form" id="contactForm" data-endpoint="https://formspree.io/f/xgaonygw" novalidate>
+    <div class="row2">
+      <label>Your name<input name="name" type="text" autocomplete="name" required maxlength="80"></label>
+      <label>Your email<input name="email" type="email" autocomplete="email" required maxlength="120"></label>
+    </div>
+    <label>Message<textarea name="message" rows="5" required maxlength="2000"></textarea></label>
+    <input class="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn solid" type="submit">Send message</button>
+    <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+  </form>
+  <div class="links">
+        <a class="btn" href="https://github.com/emmanueldouglas111-png" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/emmanuel-douglas-4657222a6" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Udota Emmanuel Douglas. Built with HTML, CSS and JavaScript.</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
